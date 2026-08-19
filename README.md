@@ -2,8 +2,7 @@
 
 Matcha is a full-stack dating web app built as a student portfolio project. It implements profile creation, matching, search, profile visits, likes, real-time chat, notifications, moderation actions, and demo data seeding.
 
-Live demo: https://matcha-cuf.pages.dev/login
-
+Live demo: [Matcha](https://matcha-cuf.pages.dev/login)
 ## Project Notice
 
 This website is not a real dating service and is not intended for real commercial operation. It is a student portfolio project built to demonstrate full-stack web development, authentication, database modeling, realtime features, and UI workflows.
