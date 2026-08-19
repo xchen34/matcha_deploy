@@ -6,9 +6,11 @@ import {
   formatNotificationDateTime,
 } from "./utils/notificationFormatters.js";
 import { 
-  GroupTypeIcon,
   getGroupAccentClass,
   getGroupBorderClass,
+} from "./utils/notificationUtils.js";
+import { 
+  GroupTypeIcon,
 } from "./components/notificationGroupUI.jsx";
 import { BellRing, Check, Bell, LoaderCircle } from "lucide-react"
 import { notificationBadgeClass } from "@/styles/UIClasses.jsx";
