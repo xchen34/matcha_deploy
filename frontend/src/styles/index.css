@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-slate-50 text-neutral-dark font-sans antialiased;
+    background-image:
+      radial-gradient(1100px 500px at -10% -20%, #ffd6a5 0%, transparent 60%),
+      radial-gradient(1200px 700px at 120% -30%, #bde0fe 0%, transparent 55%),
+      #f8fafc;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+.popularity-rolling-shell {
+  max-height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
+.popularity-rolling-track {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: popularity-scroll 18s linear infinite;
+}
+
+.popularity-rolling-shell:hover .popularity-rolling-track {
+  animation-play-state: paused;
+}
+
+@keyframes popularity-scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes bellSwing {
+  0%   { transform: rotate(0deg) translateX(0); }
+  15%  { transform: rotate(-10deg) translateX(-1px); }
+  30%  { transform: rotate(8deg) translateX(1px); }
+  45%  { transform: rotate(-6deg) translateX(-1px); }
+  60%  { transform: rotate(4deg) translateX(1px); }
+  75%  { transform: rotate(-2deg) translateX(0); }
+  100% { transform: rotate(0deg) translateX(0); }
+}
